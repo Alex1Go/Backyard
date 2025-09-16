@@ -1,0 +1,185 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #303030;
+}
+
+.gradient-bg {
+    background: #efeff2;
+}
+
+.logo_text {
+    font-size: 16px;
+    text-align: center;
+    color: rgba(51, 51, 51, 0.95);
+}
+
+.nav-links {
+    border: 1px solid rgba(225, 225, 226, 0.46);
+    border-radius: 100px;
+    padding: 3px;
+    background: #f3f4f6;
+}
+
+.nav-links>a {
+    font-weight: 500;
+    font-size: 13px;
+    text-align: center;
+    color: #aeb0b1;
+    padding: 13px;
+    border-radius: 100px;
+}
+
+@media (max-width:1280px) {
+    .nav-links>a {
+        font-size: 11px;
+    }
+}
+
+.nav-links>a:hover {
+    color: #fbfbfc;
+    border-radius: 100px;
+    background: #303030;
+    transition: all 0.3s ease;
+}
+
+.burger {
+    border: 1px solid rgba(222, 222, 227, 0.45);
+    border-radius: 11px;
+    background: #f6f7f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+
+.connect {
+    font-weight: 500;
+    font-size: 11px;
+    text-align: center;
+    color: #fbfbfc;
+    border-radius: 100px;
+    width: 75px;
+    height: 31px;
+    background: #303030;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover,
+.connect:hover {
+    color: #303030;
+    background: #cdcdd0;
+    border: 1px solid rgba(174, 174, 178, 0.27);
+
+}
+
+.section {
+    background-image: url('images/fon.png');
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+
+.hero-title {
+    font-family: "Archivo", sans-serif;
+    font-weight: 600;
+    font-size: 90px;
+    line-height: 110%;
+}
+
+@media (max-width: 360px) {
+    .hero-title {
+        font-size: 1.75rem;
+        line-height: 2rem;
+    }
+}
+
+.hero-text {
+    font-size: 24px;
+    color: rgba(38, 38, 38, 0.55);
+}
+
+.btn-primary {
+    font-family: "Archivo", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    border-radius: 38px;
+    padding: 16px 117px;
+
+    color: #f7f7f7;
+    backdrop-filter: blur(4px);
+    background: #2d2d2d;
+    border: 1px solid #2d2d2d;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary {
+    font-family: "Archivo", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    padding: 17px 62px;
+    border-radius: 38px;
+
+    color: #2e2e2e;
+    backdrop-filter: blur(4px);
+    background: #e6e8ec;
+    border: 1px solid #cecece;
+}
+
+.about-title {
+    font-family: "Archivo", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 110%;
+}
+
+@media (max-width: 360px) {
+    .max-w-7xl {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .grid-cols-1 {
+        gap: 1.5rem;
+    }
+
+    .text-3xl {
+        font-size: 1.5rem;
+    }
+
+    .py-16 {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .hero-title {
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+    }
+}
+
+@media (min-width: 1278px) {
+    .max-w-7xl {
+        max-width: 1278px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .max-w-7xl {
+        width: 100%;
+        max-width: 1434px !important;
+    }
+
+}
