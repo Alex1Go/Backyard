@@ -44,12 +44,34 @@
             </button>
 
             <!-- Mobile Menu Button -->
-            <button class="burger md:hidden ml-auto ">
+            <button class="burger md:hidden ml-auto js-open-menu" type="button">
                 <svg width="20" height="15" fill="currentColor">
                     <use href="/images/mobile_menu.svg" />
                 </svg>
             </button>
         </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-menu js-menu-container">
+            <div class="mobile-container">
+                <button class="mobile-menu-close js-close-menu" type="button">X
+                    <!-- <svg class="mobile-menu-close-svg" width="8" height="8">
+                        <use href="./images/sprite.svg#close-modal"></use>
+                    </svg> -->
+                </button>
+                <ul class="mobile-nav-links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">How it works</a>
+                    <a href="#">Token design</a>
+                    <a href="#">YARD flywheel</a>
+                </ul>
+                <button class="connect w-full mt-2">
+                    Connect
+                </button>
+            </div>
+        </div>
+
     </header>
 
     <!-- Main Content -->
@@ -261,6 +283,7 @@
 
         </section>
     </main>
+    <script src="js/mobile_menu.js"></script>
     <script src="js/slider.js"></script>
 </body>
 
