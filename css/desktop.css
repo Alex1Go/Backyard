@@ -1,0 +1,38 @@
+@media (min-width: 1920px) {
+    .max-w-7xl {
+        width: 100%;
+        max-width: 1434px !important;
+    }
+
+    .hero_img-box {
+        width: 366px;
+        height: 344px;
+        position: sticky;
+        top: 0;
+    }
+
+    .hero-title {
+        font-size: 90px;
+    }
+
+    .hero-text {
+        font-size: 24px;
+    }
+
+    .about-title {
+        font-size: 48px;
+        margin-bottom: 36px;
+    }
+
+    .text_tittle {
+        font-size: 20px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    .about_section {
+        padding: 0 30px;
+    }
+}

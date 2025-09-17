@@ -11,7 +11,9 @@
         rel="stylesheet">
     <title>Backyard</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/tablet.css" />
+    <link rel="stylesheet" href="/css/desktop.css" />
 
 </head>
 
@@ -53,13 +55,13 @@
     <!-- Main Content -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <!-- Hero Section -->
-        <section class="py-12 lg:pt-48 pb-20 section">
+        <section class="pb-10 section">
             <!-- Left Column -->
-            <div>
-                <div class="grid grid-cols-1 lg:grid-cols-2  lg:grid-rows-1 gap-8 lg:gap-16 items-center">
-                    <div class="relative text-center lg:text-left col-span-2">
+            <div class="relative">
+                <div class=" grid grid-cols-1 lg:grid-cols-2  lg:grid-rows-1 gap-8 lg:gap-16 items-center">
+                    <div class="text-left col-span-2">
 
-                        <h1 class="hero-title mb-4">
+                        <h1 class="hero-title  mb-4">
                             The yield-backed stablecoin protocol boosting DeFi liquidity
                         </h1>
                         <p class="hero-text">
@@ -69,54 +71,53 @@
 
 
                     <!-- Right Column - Hero Illustration -->
-                    <div class="flex justify-center lg:justify-end col-start-3">
+                    <div class="hero_img-box flex justify-center lg:justify-end col-start-3">
                         <div class="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
-                            <div class=" absolute top-0 right-0 w-full h-full rounded-3xl opacity-90"></div>
-                            <img src="images/Frame 1410166016.png" alt="">
+                            <img class="hero_img" src="images/frame.png" alt="">
                         </div>
                     </div>
                 </div>
 
 
                 <!-- CTA Buttons -->
-                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mt-20">
+                <div class="flex gap-4  mt-10">
                     <button class="btn-primary">
                         Join Whitelist
                     </button>
                     <button class="btn-secondary">
+                        Learn more
+                    </button>
+                    <button class="btn-therd">
                         Read Docs
                     </button>
                 </div>
             </div>
         </section>
 
-        <!-- What is Backyard Section -->
-        <section class="py-14">
-            <div class="text-start mb-12">
+        <!-- About Section -->
+        <section class="py-10">
+            <div class="text-start">
                 <h2 class="about-title">
                     What is Backyard?
                 </h2>
             </div>
 
             <!-- Features Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-36 px-8">
+            <div class="about_section grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-36">
                 <!-- Feature 1: Yield Aggregator -->
                 <div class="text-center">
-                    <div class="flex justify-center mb-6">
-                        <div class="relative">
-                            <div class="soil-gradient w-20 h-8 rounded-full"></div>
-                            <div
-                                class="feature-icon absolute -top-2 left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full">
-                            </div>
+                    <div class="flex justify-center">
+                        <div class="about_img">
+                            <img src="images/img_1.png" alt="">
                         </div>
                     </div>
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="">1</div>
-                        <h3 class="text-xl font-semibold text-gray-900">Yield Aggregator</h3>
+                    <div class="title_box flex relative items-center justify-center mb-4">
+                        <div class="about_number absolute left-3 ">1</div>
+                        <h3 class="about_box-tittle">Yield Aggregator</h3>
                     </div>
-                    <div class="text-left">
-                        <h4 class="font-medium text-gray-900 mb-2">One-click yield aggregation</h4>
-                        <p class="text-gray-600 text-sm leading-relaxed">
+                    <div class="text_box text-left">
+                        <h4 class="text_tittle">One-click yield aggregation</h4>
+                        <p class="text">
                             Deposit multiple stablecoins strategically to maximize yield while your liquidity secures
                             staked positions
                         </p>
@@ -125,26 +126,18 @@
 
                 <!-- Feature 2: Yield-Backed Stablecoin -->
                 <div class="text-center">
-                    <div class="flex justify-center mb-6">
-                        <div class="relative">
-                            <div class="soil-gradient w-20 h-8 rounded-full"></div>
-                            <div
-                                class="plant-gradient absolute -top-4 left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-lg">
-                            </div>
-                            <svg class="absolute -top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 text-white"
-                                viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22L6.66 19.7C7.14 19.87 7.64 20 8 20C19 20 22 3 22 3C21 5 14 5.25 9 6.25C4 7.25 2 11.5 2 13.5C2 15.5 3.75 17.25 3.75 17.25C7.5 15 12 16 17 8Z" />
-                            </svg>
+                    <div class="flex justify-center">
+                        <div class="about_img">
+                            <img src="images/img_2.png" alt="">
                         </div>
                     </div>
-                    <div class="flex items-center justify-center mb-4">
-                        <div class="w-2 h-2 bg-gray-900 rounded-full mr-3"></div>
-                        <h3 class="text-xl font-semibold text-gray-900">Yield-Backed Stablecoin</h3>
+                    <div class="title_box flex relative items-center justify-center mb-4">
+                        <div class="about_number absolute left-3">2</div>
+                        <h3 class="about_box-tittle">Yield-Backed Stablecoin</h3>
                     </div>
-                    <div class="text-left">
-                        <h4 class="font-medium text-gray-900 mb-2">Unlock liquidity with BYD</h4>
-                        <p class="text-gray-600 text-sm leading-relaxed">
+                    <div class="text_box text-left">
+                        <h4 class="text_tittle">Unlock liquidity with BYD</h4>
+                        <p class="text">
                             Mint BYD against any yield-generating positions or LSD and retain full ownership
                         </p>
                     </div>
@@ -152,32 +145,123 @@
 
                 <!-- Feature 3: Boost DeFi Liquidity -->
                 <div class="text-center">
-                    <div class="flex justify-center mb-6">
-                        <div class="relative">
-                            <div class="soil-gradient w-20 h-8 rounded-full"></div>
-                            <div
-                                class="plant-gradient absolute -top-4 left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-lg">
-                            </div>
-                            <div
-                                class="diamond-gradient absolute -top-8 left-1/2 transform -translate-x-1/2 w-6 h-6 rounded rotate-45">
-                            </div>
+                    <div class="flex justify-center">
+                        <div class="about_img">
+                            <img src="images/img_3.png" alt="">
                         </div>
                     </div>
-                    <div class="flex items-center justify-center mb-4">
-                        <div class="w-2 h-2 bg-gray-900 rounded-full mr-3"></div>
-                        <h3 class="text-xl font-semibold text-gray-900">Boost DeFi Liquidity</h3>
+                    <div class="title_box flex relative items-center justify-center mb-4">
+                        <div class="about_number absolute left-3">3</div>
+                        <h3 class="about_box-tittle">Boost DeFi Liquidity</h3>
                     </div>
-                    <div class="text-left">
-                        <h4 class="font-medium text-gray-900 mb-2">Boost protocols, earn more</h4>
-                        <p class="text-gray-600 text-sm leading-relaxed">
+                    <div class="text_box text-left">
+                        <h4 class="text_tittle">Boost protocols, earn more</h4>
+                        <p class="text">
                             Use BYD to boost protocols, pools, and yield farms while maintaining exposure to your
                             original positions
                         </p>
                     </div>
                 </div>
             </div>
+            <div class="mobile-slider">
+                <div class="relative">
+                    <!-- Slider Container -->
+                    <div class="slider-container">
+                        <div class="slider-track" id="sliderTrack">
+                            <!-- Slide 1 -->
+                            <div class="slide">
+                                <!-- Feature 1: Yield Aggregator -->
+                                <div class="text-center">
+                                    <div class="flex justify-center">
+                                        <div class="about_img">
+                                            <img class="object-contain" src="images/img_1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="slide-content">
+                                        <div class="title_box flex relative items-center justify-center mb-4">
+                                            <div class="about_number absolute left-3 ">1</div>
+                                            <h3 class="about_box-tittle">Yield Aggregator</h3>
+                                        </div>
+                                        <div class="text_box text-left">
+                                            <h4 class="text_tittle">One-click yield aggregation</h4>
+                                            <p class="text">
+                                                Deposit multiple stablecoins strategically to maximize yield while your
+                                                liquidity secures
+                                                staked positions
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 2: Yield-Backed Stablecoin -->
+                            <div class="slide">
+                                <div class="text-center">
+                                    <div class="flex justify-center">
+                                        <div class="about_img">
+                                            <img class="object-contain" src="images/img_2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="slide-content">
+                                        <div class="title_box flex relative items-center justify-center mb-4">
+                                            <div class="about_number absolute left-3">2</div>
+                                            <h3 class="about_box-tittle">Yield-Backed Stablecoin</h3>
+                                        </div>
+                                        <div class="text_box text-left">
+                                            <h4 class="text_tittle">Unlock liquidity with BYD</h4>
+                                            <p class="text">
+                                                Mint BYD against any yield-generating positions or LSD and retain full
+                                                ownership
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Feature 3: Boost DeFi Liquidity -->
+                            <div class="slide">
+                                <div class="text-center">
+
+                                    <div class="about_img">
+                                        <img class="object-contain" src="images/img_3.png" alt="">
+                                    </div>
+
+                                    <div class="slide-content">
+                                        <div class="title_box flex relative items-center justify-center mb-4">
+                                            <div class="about_number absolute left-3">3</div>
+                                            <h3 class="about_box-tittle">Boost DeFi Liquidity</h3>
+                                        </div>
+                                        <div class="text_box text-left">
+                                            <h4 class="text_tittle">Boost protocols, earn more</h4>
+                                            <p class="text">
+                                                Use BYD to boost protocols, pools, and yield farms while maintaining
+                                                exposure to your
+                                                original positions
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Dots Pagination -->
+                    <div class="flex justify-start mt-5 ml-8 space-x-2 ">
+                        <button class="dot  rounded-full bg-gray-300 active" data-slide="0"></button>
+                        <button class="dot  rounded-full bg-gray-300" data-slide="1"></button>
+                        <button class="dot  rounded-full bg-gray-300" data-slide="2"></button>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
+    <script src="js/slider.js"></script>
 </body>
 
 </html>
