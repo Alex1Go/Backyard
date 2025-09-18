@@ -169,7 +169,7 @@ body {
 }
 
 .section {
-    background-image: url('/images/fon.png');
+    background-image: url('../images/fon.png');
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
