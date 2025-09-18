@@ -5,7 +5,6 @@ class HorizontalSlider {
     this.sliderTrack = document.getElementById('sliderTrack');
     this.dots = document.querySelectorAll('.dot');
 
-    // Проверяем существование элементов
     if (!this.sliderTrack || this.dots.length === 0) {
       console.error('Slider elements not found');
       return;
@@ -15,23 +14,17 @@ class HorizontalSlider {
   }
 
   init() {
-    // Dots pagination
     this.dots.forEach((dot, index) => {
       dot.addEventListener('click', () => this.goToSlide(index));
     });
 
-    // Touch/swipe support
     this.addTouchSupport();
-
-    // Auto-play (опционально)
-    // this.startAutoplay();
   }
 
   updateSlider() {
     const translateX = -this.currentSlide * (100 / this.totalSlides);
     this.sliderTrack.style.transform = `translateX(${translateX}%)`;
 
-    // Update dots
     this.dots.forEach((dot, index) => {
       dot.classList.toggle('active', index === this.currentSlide);
     });
@@ -59,7 +52,6 @@ class HorizontalSlider {
     let endY = 0;
     let isDragging = false;
 
-    // Touch events
     this.sliderTrack.addEventListener(
       'touchstart',
       e => {
@@ -75,7 +67,6 @@ class HorizontalSlider {
       e => {
         if (!isDragging) return;
 
-        // Предотвращаем вертикальную прокрутку во время горизонтального свайпа
         const currentX = e.touches[0].clientX;
         const currentY = e.touches[0].clientY;
         const deltaX = Math.abs(currentX - startX);
@@ -101,7 +92,6 @@ class HorizontalSlider {
       { passive: true }
     );
 
-    // Mouse events для тестирования на desktop
     this.sliderTrack.addEventListener('mousedown', e => {
       startX = e.clientX;
       startY = e.clientY;
@@ -134,7 +124,6 @@ class HorizontalSlider {
     const diffX = startX - endX;
     const diffY = Math.abs(startY - endY);
 
-    // Проверяем, что это горизонтальный свайп
     if (Math.abs(diffX) > threshold && Math.abs(diffX) > diffY) {
       if (diffX > 0) {
         this.nextSlide();
@@ -151,7 +140,6 @@ class HorizontalSlider {
   }
 }
 
-// Initialize slider when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
   new HorizontalSlider();
 });

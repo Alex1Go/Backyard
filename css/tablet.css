@@ -23,6 +23,7 @@
         backdrop-filter: blur(4px);
         background: #e6e8ec;
         border: 1px solid #cecece;
+        transition: all 0.3s ease;
     }
 
     .about-title {
