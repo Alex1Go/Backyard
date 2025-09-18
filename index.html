@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/images/logo.svg" />
+    <link rel="icon" type="image/svg+xml" href="./images/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,7 @@
 
 <body class="gradient-bg min-h-screen">
     <!-- Header -->
-    <header class="fixed w-full">
+    <header class="fixed w-full header">
         <div class="relative max-w-7xl py-4 sm:py-6 lg:py-8 px-4 sm:px-6 lg:px-8 mx-auto flex items-center">
             <!-- Logo -->
             <div class="absolute flex items-center space-x-2 left-py-8 top1/2 ">
@@ -55,11 +55,7 @@
         <!-- Mobile Navigation Menu -->
         <div class="mobile-menu js-menu-container">
             <div class="mobile-container">
-                <button class="mobile-menu-close js-close-menu" type="button">X
-                    <!-- <svg class="mobile-menu-close-svg" width="8" height="8">
-                        <use href="./images/sprite.svg#close-modal"></use>
-                    </svg> -->
-                </button>
+                <button class="mobile-menu-close js-close-menu" type="button">X</button>
                 <ul class="mobile-nav-links">
                     <a href="#">Home</a>
                     <a href="#">About</a>
@@ -96,7 +92,7 @@
                     <!-- Right Column - Hero Illustration -->
                     <div class="hero_img-box flex justify-center lg:justify-end col-start-3">
                         <div class="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
-                            <img class="hero_img" src="images/frame.png" alt="">
+                            <img class="hero_img" src="./images/frame.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -284,6 +280,7 @@
 
         </section>
     </main>
+    <script src="js/scroll.js"></script>
     <script src="js/mobile_menu.js"></script>
     <script src="js/slider.js"></script>
 </body>

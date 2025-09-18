@@ -79,9 +79,22 @@ body {
     background-color: #d4d4d4;
 }
 
-header {
+.header {
     z-index: 10;
-    background: #efeff2
+
+}
+
+.header.scrolled {
+    background: #efeff2;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+}
+
+.header.scrolled>div {
+
+    padding-bottom: 10px;
 }
 
 .logo_text {
@@ -156,7 +169,7 @@ header {
 }
 
 .section {
-    background-image: url('images/fon.png');
+    background-image: url('/images/fon.png');
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
